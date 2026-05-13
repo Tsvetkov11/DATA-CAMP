@@ -41,7 +41,7 @@ def run_pipeline():
     
     with engine.connect() as conn:
         df_report = pd.read_sql(text(query), conn)
-        df_report.to_csv("data/final_report.csv", index=False)
+        df_report.to_csv("lesson_13_DE_introduction/data/final_report.csv", index=False)
     
     print("file done")
 
