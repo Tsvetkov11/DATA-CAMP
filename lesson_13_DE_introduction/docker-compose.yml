@@ -9,4 +9,8 @@ services:
       POSTGRES_PASSWORD: password123
       POSTGRES_DB: test_db
     ports:
+<<<<<<< HEAD
       - "5433:5432"
+=======
+      - "5433:5432"
+>>>>>>> 54a37f547b92650e04af9994f019191f01407406
