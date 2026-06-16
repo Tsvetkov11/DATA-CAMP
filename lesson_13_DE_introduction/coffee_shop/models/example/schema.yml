@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: sales_analytics
+    description: "Аналітична вітрина даних про продажі"
+    columns:
+      - name: order_id
+        description: "Ідентифікатор замовлення"
+        tests:
+          - not_null
+      - name: product_name
+        description: "Назва товару"
+        tests:
+          - not_null
+      - name: total_sales
+        description: "Загальна сума по позиції"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [40.00, 45.00, 55.00, 60.00, 90.00, 120.00]
